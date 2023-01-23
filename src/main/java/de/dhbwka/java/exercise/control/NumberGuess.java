@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 class NumberGuessGame {
     private final Scanner scanner = new Scanner(System.in);
+    private final String username;
+
+    public NumberGuessGame() {
+        username = askUsername();
+    }
 
     public String askUsername() {
         System.out.print("Wie ist dein Name? ");
@@ -22,7 +27,6 @@ class NumberGuessGame {
     }
 
     public void run() {
-        String username = askUsername();
         int randomNumber = generateRandomNumber();
 
         int tries = 1;

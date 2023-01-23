@@ -8,7 +8,7 @@ public class Deers {
             ++years;
             deers *= 1.1;
             deers -= 15;
-            System.out.println(years + ": " + deers + " Hirsche");
+            System.out.printf("%d: %d Hirsche \n", years, deers);
         }
     }
 }

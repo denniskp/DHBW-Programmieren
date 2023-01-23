@@ -9,8 +9,8 @@ public class TemperatureTable {
         System.out.println("Fahrenheit | Celsius");
         System.out.println("-----------+--------");
         for (int i = 0; i <= 300; i += 20) {
-            String formattedResult = String.format("%.2f", fahrenheitToCelsius(i));
-            System.out.println(i + " | " + formattedResult);
+            double result = fahrenheitToCelsius(i);
+            System.out.printf("%d | %.2f \n", i, result);
         }
     }
 }

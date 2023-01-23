@@ -10,7 +10,7 @@ public class NumberGuess {
         String username = scanner.next();
 
         do {
-            int randomNumber = (int) (Math.random() * 100);
+            final int randomNumber = (int) (Math.random() * 100) + 1;
 
             int tries = 1;
             while (true) {

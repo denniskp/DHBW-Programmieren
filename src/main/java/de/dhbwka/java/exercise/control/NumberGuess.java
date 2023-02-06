@@ -10,12 +10,12 @@ public class NumberGuess {
         String username = scanner.next();
 
         do {
-            final int randomNumber = (int) (Math.random() * 100) + 1;
+            int randomNumber = (int) (Math.random() * 100) + 1;
 
             int tries = 1;
             while (true) {
                 System.out.printf("%s, rate eine Zahl [1-100]: ", username);
-                final int input = scanner.nextInt();
+                int input = scanner.nextInt();
 
                 if (input < randomNumber) {
                     System.out.printf("Versuch %d: %d ist zu niedrig.\n", tries++, input);

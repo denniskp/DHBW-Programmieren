@@ -4,14 +4,10 @@ import java.util.Scanner;
 
 public class BubbleSort {
     private static boolean isSorted(int[] array) {
-        boolean isSorted = true;
-        for (int i = 0; i < array.length - 1; ++i) {
-            if (array[i] > array[i + 1]) {
-                isSorted = false;
-                break;
-            }
-        }
-        return isSorted;
+        for (int i = 0; i < array.length - 1; ++i)
+            if (array[i] > array[i + 1])
+                return false;
+        return true;
     }
 
     public static void sort(int[] array) {

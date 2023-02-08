@@ -8,3 +8,4 @@
 - [Operators](src/main/java/de/dhbwka/java/exercise/operators)
 - [Statements and Loops](src/main/java/de/dhbwka/java/exercise/control)
 - [Arrays](src/main/java/de/dhbwka/java/exercise/arrays)
+- [Classes](src/main/java/de/dhbwka/java/exercise/classes)

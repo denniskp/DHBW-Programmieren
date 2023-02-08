@@ -33,7 +33,7 @@ public class Complex {
         double cReal = comp.getReal();
         double cImag = comp.getImag();
         double newReal = (real * cReal) - (imag * cImag);
-        double newImag = (real * cImag) - (imag * cReal);
+        double newImag = (real * cImag) + (imag * cReal);
         return new Complex(newReal, newImag);
     }
 
@@ -84,9 +84,19 @@ public class Complex {
     public static void main(String[] args) {
         final Random random = new Random();
 
+        Complex c1 = new Complex(1.0, 2.0);
+        System.out.printf("C1: %s\n", c1);
+        Complex c2 = new Complex(2.0, 1.0);
+        System.out.printf("C2: %s\n", c2);
+        System.out.printf("C1 + C2: %s\n", c1.add(c2));
+        System.out.printf("C1 - C2: %s\n", c1.sub(c2));
+        System.out.printf("C1 * C2: %s\n", c1.mult(c2));
+        System.out.printf("C1 / C2: %s\n", c1.div(c2));
+        System.out.printf("C1 < C2: %s\n", c1.isLess(c2));
+
         Complex[] complexList = new Complex[10];
         for (int i = 0; i < 10; ++i) {
-            Complex randComp = new Complex(random.nextDouble(10.0), random.nextDouble(10.0));
+            Complex randComp = new Complex(random.nextDouble(-10.0, 10.0), random.nextDouble(-10.0, 10.0));
             complexList[i] = randComp;
         }
 

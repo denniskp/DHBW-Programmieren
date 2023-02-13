@@ -17,8 +17,8 @@ class Attempt extends AbstractMap.SimpleEntry<String, AttemptResult> {
 // #typedef AbstractMap.SimpleEntry<String, AbstractMap.SimpleEntry<Integer, Integer>> Attempt
 
 public class MasterMind {
-    private static final int MIN_STRING_RANGE = 0x41;
-    private static final int MAX_STRING_RANGE = 0x48;
+    private static final int MIN_STRING_RANGE = 'A';
+    private static final int MAX_STRING_RANGE = 'H';
     private static final int MAX_STRING_LENGTH = 5;
     private static final int MAX_ATTEMPTS = 20;
 

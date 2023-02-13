@@ -37,10 +37,7 @@ public class MasterMind {
                 amountAttempts++;
 
                 System.out.print("Submit you tip: ");
-                String tip = scanner.next().toUpperCase();
-                tip = tip.substring(0, Math.min(tip.length(), MAX_STRING_LENGTH));
-                tip = String.format("%-" + MAX_STRING_LENGTH + "s", tip);
-                tip = tip.replace(' ', 'A');
+                String tip = getFormattedInputTip();
 
                 if (tip.equalsIgnoreCase(randomString)) {
                     System.out.printf("You won with %d guesses!\n", amountAttempts);
@@ -67,6 +64,14 @@ public class MasterMind {
             System.out.println("(E)xit");
             System.out.print("--> ");
         } while (scanner.next().equalsIgnoreCase("c"));
+    }
+
+    private String getFormattedInputTip() {
+        String tip = scanner.next().toUpperCase();
+        tip = tip.substring(0, Math.min(tip.length(), MAX_STRING_LENGTH));
+        tip = String.format("%-" + MAX_STRING_LENGTH + "s", tip);
+        tip = tip.replace(' ', (char) MIN_STRING_RANGE);
+        return tip;
     }
 
     private AttemptResult getCorrectAndSimilar(String attempt, String random) {

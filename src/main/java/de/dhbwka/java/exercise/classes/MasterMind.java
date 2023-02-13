@@ -71,7 +71,6 @@ public class MasterMind {
 
     private AttemptResult getCorrectAndSimilar(String attempt, String random) {
         boolean[] checked = new boolean[MAX_STRING_LENGTH];
-        boolean[] used = new boolean[MAX_STRING_LENGTH];
         int nCorrect = 0;
         int nSimilar = 0;
 
@@ -80,16 +79,13 @@ public class MasterMind {
             if (attempt.charAt(i) == random.charAt(i)) {
                 nCorrect++;
                 checked[i] = true;
-                used[i] = true;
             }
         }
 
         // Get letters on bad position
         for (int i = 0; i < MAX_STRING_LENGTH; i++) {
             for (int j = 0; j < MAX_STRING_LENGTH; j++) {
-                if ((i == j) || (used[i]) || (checked[j])) {
-                    continue;
-                } else if ((attempt.charAt(i) == random.charAt(j)) && (!checked[j])) {
+                if ((i != j) && (!checked[j]) && (attempt.charAt(i) == random.charAt(j))) {
                     nSimilar++;
                     checked[j] = true;
                     break;

@@ -1,5 +1,9 @@
 # DHBW-Programmieren
 
+[![](https://img.shields.io/badge/Language-Java-yellow.svg?style=flat)](https://www.java.com/)
+[![](https://img.shields.io/github/languages/code-size/denniskp/DHBW-Programmieren?color=blue&label=Code%20size&style=flat)](https://github.com/denniskp/DHBW-Programmieren/)
+[![](https://img.shields.io/tokei/lines/github/denniskp/DHBW-Programmieren?color=darkgreen&label=Total%20lines&style=flat)](https://github.com/denniskp/DHBW-Programmieren/)
+
 ## Exercises
 
 ### Modules

@@ -74,21 +74,17 @@ public class MasterMind {
         int nCorrect = 0;
         int nSimilar = 0;
 
-        // Get correct letters
         for (int i = 0; i < MAX_STRING_LENGTH; i++) {
             if (random.charAt(i) == attempt.charAt(i)) {
                 nCorrect++;
                 checked[i] = true;
-            }
-        }
-
-        // Get letters on bad position
-        for (int i = 0; i < MAX_STRING_LENGTH; i++) {
-            for (int j = 0; j < MAX_STRING_LENGTH; j++) {
-                if ((i != j) && (!checked[j]) && (random.charAt(i) == attempt.charAt(j))) {
-                    nSimilar++;
-                    checked[j] = true;
-                    break;
+            } else {
+                for (int j = 0; j < MAX_STRING_LENGTH; j++) {
+                    if ((i != j) && (!checked[j]) && (random.charAt(i) == attempt.charAt(j))) {
+                        nSimilar++;
+                        checked[j] = true;
+                        break;
+                    }
                 }
             }
         }

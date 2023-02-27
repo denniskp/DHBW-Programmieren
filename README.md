@@ -13,3 +13,5 @@
 - [Statements and Loops](src/main/java/de/dhbwka/java/exercise/control)
 - [Arrays](src/main/java/de/dhbwka/java/exercise/arrays)
 - [Classes](src/main/java/de/dhbwka/java/exercise/classes)
+- [Strings](src/main/java/de/dhbwka/java/exercise/strings)
+- [Methods](src/main/java/de/dhbwka/java/exercise/methods)

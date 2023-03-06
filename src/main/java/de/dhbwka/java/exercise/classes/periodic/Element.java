@@ -59,7 +59,7 @@ public class Element {
 
     @Override
     public boolean equals(Object o) {
-        return (o instanceof Element) && (((Element) o).getOrdinal() == this.getOrdinal());
+        return (o instanceof Element e) && (e.getOrdinal() == this.getOrdinal());
     }
 
     @Override

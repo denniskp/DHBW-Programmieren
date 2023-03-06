@@ -6,7 +6,7 @@ public class Element {
     public final static int PHASE_GAS = 3;
 
     public final static boolean GROUP_MAIN = true;
-    public final static boolean GROUP_SIDE = true;
+    public final static boolean GROUP_SIDE = false;
 
     private final String name;
     private final String symbol;
@@ -59,11 +59,11 @@ public class Element {
 
     @Override
     public boolean equals(Object o) {
-        return (o instanceof Element) && (((Element) o).getOrdinal() == this.getOrdinal());
+        return (o instanceof Element e) && (e.getOrdinal() == this.getOrdinal());
     }
 
     @Override
     public String toString() {
-        return String.format("%-2s | %-15s | %2d | %s | %-9s | %s", symbol, name, ordinal, shell, phaseToString(), isMainGroup ? "H" : "N");
+        return String.format("%-2s | %-13s | %2d | %s | %-9s | %s", symbol, name, ordinal, shell, phaseToString(), isMainGroup ? "H" : "N");
     }
 }

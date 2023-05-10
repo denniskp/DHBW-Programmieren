@@ -3,9 +3,9 @@ package de.dhbwka.java.exercise.classes;
 public class Polynomial {
     private static final String STRING_PRINT = "%fx^2 %+fx %+f";
 
-    private double a;
-    private double b;
-    private double c;
+    private final double a;
+    private final double b;
+    private final double c;
 
     public Polynomial(double a, double b, double c) {
         this.a = a;

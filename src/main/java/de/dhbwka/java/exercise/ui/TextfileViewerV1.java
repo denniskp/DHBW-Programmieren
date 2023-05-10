@@ -8,9 +8,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TextfileViewer extends JFrame {
-    public TextfileViewer() {
-        this.setTitle("Textfile Viewer");
+public class TextfileViewerV1 extends JFrame {
+    public TextfileViewerV1() {
+        this.setTitle("Textfile Viewer V1");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500, 340);
 
@@ -54,7 +54,7 @@ public class TextfileViewer extends JFrame {
     }
 
     public static void main(String[] args) {
-        TextfileViewer frame = new TextfileViewer();
+        TextfileViewerV1 frame = new TextfileViewerV1();
         frame.showWindow();
     }
 }

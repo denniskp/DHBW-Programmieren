@@ -1,19 +1,22 @@
 package de.dhbwka.java.exercise.ui;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class TextFrame extends JFrame {
-    private JPanel pnlMain;
-    private JTextArea txtaFileContents;
 
     public TextFrame(String fileName, int width, int height) {
+        JTextArea txtaFileContents = new JTextArea();
+        JPanel pnlMain = new JPanel(new GridLayout(1, 1));
+
         this.setTitle(fileName);
-        this.setContentPane(pnlMain);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(width, height);
+
+        pnlMain.add(txtaFileContents);
 
         String fileContents = "";
         try {
@@ -22,7 +25,9 @@ public class TextFrame extends JFrame {
             System.out.println("Unable to read file");
         }
 
-        this.txtaFileContents.setText(fileContents);
+        txtaFileContents.setText(fileContents);
+
+        this.add(pnlMain);
     }
 
     public void showWindow() {

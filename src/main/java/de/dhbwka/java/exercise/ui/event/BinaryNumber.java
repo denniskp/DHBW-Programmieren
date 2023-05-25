@@ -12,7 +12,6 @@ public class BinaryNumber extends JFrame {
         for (int i = 7; i >= 0; i--) {
             this.add(new JButton(), BorderLayout.NORTH);
             this.add(new JLabel(String.format("2^%d", i)), BorderLayout.CENTER);
-            // Test
         }
 
         this.add(new JLabel(), BorderLayout.SOUTH);

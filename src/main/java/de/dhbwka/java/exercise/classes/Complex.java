@@ -1,6 +1,6 @@
 package de.dhbwka.java.exercise.classes;
 
-import java.util.*;
+import java.util.Random;
 
 public class Complex {
     private static final String STR_PRINT = "%f %+fi";

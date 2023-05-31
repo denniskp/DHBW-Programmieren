@@ -7,6 +7,7 @@ import java.awt.*;
 public class EditorSimple extends JFrame {
     public EditorSimple() {
         this.setTitle("Editor");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500, 500);
 
         JPanel pnlMain = new JPanel();

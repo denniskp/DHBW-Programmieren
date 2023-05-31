@@ -5,8 +5,8 @@ import java.awt.*;
 import java.io.*;
 
 public class NumberGuess extends JFrame {
-    private JTextField txtPlayerName;
-    private JTextField txtNumberGuess;
+    private final JTextField txtPlayerName;
+    private final JTextField txtNumberGuess;
     private JTextField txtOutput;
 
     private int randomNumber;

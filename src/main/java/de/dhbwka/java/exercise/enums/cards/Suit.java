@@ -1,10 +1,10 @@
 package de.dhbwka.java.exercise.enums.cards;
 
 public enum Suit {
-    DIAMONDS("Karo"),
     HEART("Herz"),
-    SPADE("Pik"),
-    CLUBS("Kreuz");
+    DIAMONDS("Karo"),
+    CLUBS("Kreuz"),
+    SPADE("Pik");
 
     private final String name;
 

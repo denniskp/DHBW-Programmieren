@@ -19,3 +19,4 @@
 - [UI](src/main/java/de/dhbwka/java/exercise/ui)
 - [Collections](src/main/java/de/dhbwka/java/exercise/collections)
 - [Enums](src/main/java/de/dhbwka/java/exercise/enums)
+- [Threads](src/main/java/de/dhbwka/java/exercise/threads)

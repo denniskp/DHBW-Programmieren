@@ -17,6 +17,7 @@ class GeonamesSortByPopulation implements Comparator<Geonames> {
     }
 }
 
+@SuppressWarnings("unused")
 class Geonames {
     public String fcodeName;
     public String toponymName;
@@ -32,7 +33,6 @@ class Geonames {
     public int population;
 }
 
-@SuppressWarnings("unused")
 class GeocodingResult {
     public List<Geonames> geonames;
 }
